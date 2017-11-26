@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <jsp-config>
+        <jsp-property-group>
+            <url-pattern>/index.jsp</url-pattern>
+            <url-pattern>/WEB-INF/view/*</url-pattern>
+        </jsp-property-group>
+    </jsp-config>
+    <context-param>
+        <param-name>javax.servlet.jsp.jstl.fmt.localizationContext</param-name>
+        <param-value>resources.language</param-value>
+    </context-param>
+<!--    <servlet>
+        <servlet-name>ControlerAD</servlet-name>
+        <servlet-class>controller.ControlerAD</servlet-class>
+        <multipart-config>
+            <max-file-size>10485760</max-file-size>
+            <max-request-size>20971520</max-request-size>
+            <file-size-threshold>5242880</file-size-threshold>
+        </multipart-config>
+    </servlet>-->
+    <!--    <servlet>
+        <servlet-name>FileServlet</servlet-name>
+        <servlet-class>bb.servlets.advertisements.FileServlet</servlet-class>
+        <multipart-config>
+            <location>/tmp</location>
+            <max-file-size>1048576000</max-file-size>
+            <max-request-size>2097152000</max-request-size>
+            <file-size-threshold>5242880</file-size-threshold>
+        </multipart-config>
+    </servlet>
+    -->
+<!--    <servlet>
+        <servlet-name>NewServlet1</servlet-name>
+        <servlet-class>controller.NewServlet1</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ControlerAD</servlet-name>
+        <url-pattern>/ControlerAD
+        </url-pattern>
+    </servlet-mapping>-->
+<!--    <servlet-mapping>
+        <servlet-name>ControlerAD</servlet-name>
+        <url-pattern>
+            /createNewAd
+        </url-pattern>
+    </servlet-mapping>-->
+<!--    
+    <servlet-mapping>
+        <servlet-name>NewServlet1</servlet-name>
+        <url-pattern>/NewServlet1</url-pattern>
+    </servlet-mapping>-->
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
